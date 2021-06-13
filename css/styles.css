@@ -1,0 +1,55 @@
+/*VARIABLES GLOBALES*/
+/*https://colorhunt.co/palette/281939*/
+
+:root{
+    --primario:#ffffc7;
+    --secundario:#233e8b;
+    --verdeAgua:#a9f1df;
+    --verde:#1eae98;
+    --fuentePpal:'Baloo Tammudu 2', cursive;
+}
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+    box-sizing: border-box;
+  }
+*, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  body{
+      font-family: var(--fuentePpal);
+      font-size: 1.6rem;
+  }
+
+  img{
+      max-width: 100%;
+  }
+
+  h1{
+      font-size: 4rem;
+      color: var(--secundario);
+  }
+
+  .contenedor{
+      max-width: 1200px;
+      width: 95%;
+      margin: 0 auto;
+  }
+
+  .entrada-blog{
+      display: inline-block;
+      background-color: var(--primario);
+      color: var(--verde);
+      padding: 10px 20px;
+      text-decoration: none;
+      font-weight: 700;
+      text-transform: uppercase;
+  }
+
+  /*ok!*/
+
+  a {
+      text-decoration: none;
+      cursor: pointer;
+  }
