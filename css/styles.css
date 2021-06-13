@@ -12,32 +12,32 @@
 /* apply a natural box layout model to all elements, but allowing components to change */
 html {
     box-sizing: border-box;
-  }
-*, *:before, *:after {
+}
+  *, *:before, *:after {
     box-sizing: inherit;
-  }
+}
 
-  body{
+body{
       font-family: var(--fuentePpal);
       font-size: 1.6rem;
-  }
+}
 
-  img{
+img{
       max-width: 100%;
-  }
+}
 
-  h1{
+h1{
       font-size: 4rem;
       color: var(--secundario);
-  }
+}
 
-  .contenedor{
+.contenedor{
       max-width: 1200px;
       width: 95%;
       margin: 0 auto;
-  }
+}
 
-  .entrada-blog{
+.entrada-blog{
       display: inline-block;
       background-color: var(--primario);
       color: var(--verde);
@@ -45,11 +45,20 @@ html {
       text-decoration: none;
       font-weight: 700;
       text-transform: uppercase;
-  }
+}
 
   /*ok!*/
 
-  a {
-      text-decoration: none;
-      cursor: pointer;
-  }
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@media (min-width:768px){
+    .dos-columnas{
+        display: flex;
+        justify-content: space-between;
+        gap: 2rem;
+    }
+}
+
