@@ -1,3 +1,15 @@
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
 /*VARIABLES GLOBALES*/
 /*https://colorhunt.co/palette/281939*/
 
@@ -9,13 +21,6 @@
     --fuentePpal:'Baloo Tammudu 2', cursive;
 }
 
-/* apply a natural box layout model to all elements, but allowing components to change */
-html {
-    box-sizing: border-box;
-}
-  *, *:before, *:after {
-    box-sizing: inherit;
-}
 
 body{
       font-family: var(--fuentePpal);
